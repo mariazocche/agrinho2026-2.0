@@ -1,0 +1,329 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #8fd699e0;
+    color: #2a5531;
+    overflow-x: hidden;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+    background-color: #2a5531;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.cabecalho h3 {
+    color: rgba(125, 255, 131, 0.637);
+}
+
+.cabecalho-ajuste {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar-ajuste {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* =========================
+   TEXTO
+========================= */
+
+.alinha {
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* =========================
+   TÍTULO PRINCIPAL
+========================= */
+
+.titulo-principal {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   IMAGEM PRINCIPAL
+========================= */
+
+.jihoon {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 40px;
+}
+
+/* =========================
+   SEÇÃO CENTRAL
+========================= */
+
+.ambiente {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.imagem-centralizada {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.ambiente-card {
+    gap: 50px;
+}
+
+.what-1 {
+    font-weight: bold;
+}
+
+.card-body {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cards-container {
+    margin-top: 40px;
+}
+
+.card-full {
+    width: 100%;
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card h2 {
+    color: #2a5531;
+    font-weight: bold;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2a5531;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #3b7545;
+    color: white;
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+
+.rodape {
+    background-color: #2a5531;
+    color: white;
+    margin-top: 30px;
+}
+
+/* =========================
+   ANIMAÇÕES DE ENTRADA
+========================= */
+
+.efeito-fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s;
+}
+
+.efeito-zoom {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: 0.8s;
+}
+
+.efeito-slide {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: 0.8s;
+}
+
+.visivel {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+}
+
+/* =========================
+   HOVER NAS IMAGENS
+========================= */
+
+.hover-zoom {
+    transition: transform 0.4s ease;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+   BOTÃO ANIMADO
+========================= */
+
+.efeito-botao {
+    transition: transform 0.3s ease;
+}
+
+.efeito-botao:hover {
+    transform: translateY(-3px);
+}
+
+/* =========================
+   ESTRELAS
+========================= */
+
+.estrela {
+    position: fixed;
+    top: -50px;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(45deg, white, yellow);
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+    z-index: 9999;
+    pointer-events: none;
+    animation: quedaEstrela 1.5s linear forwards;
+}
+
+@keyframes quedaEstrela {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(600px, 800px) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* =========================
+   ÁRVORES ANIMADAS
+========================= */
+
+.tree {
+    position: fixed;
+    bottom: -150px;
+    z-index: 999;
+    pointer-events: none;
+    animation: subirArvore 5s linear forwards;
+}
+
+@keyframes subirArvore {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-120vh);
+        opacity: 0;
+    }
+}
+
+/* =========================
+   LINHAS DOS CANTOS
+========================= */
+
+.linha-canto {
+    position: fixed;
+    width: 4px;
+    height: 100px;
+    background-color: #2a5531;
+    z-index: 1000;
+}
+
+.linha-canto.horizontal {
+    width: 100px;
+    height: 4px;
+}
+
+.btn-saiba {
+    background: #2a5531;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-saiba:hover {
+    background: #3d7547;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background: white;
+    margin: 8% auto;
+    padding: 25px;
+    width: 80%;
+    max-width: 650px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
